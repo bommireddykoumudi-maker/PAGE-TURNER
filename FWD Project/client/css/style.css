@@ -1,0 +1,106 @@
+body{
+font-family:'Segoe UI', sans-serif;
+background:#fafafa;
+margin:0;
+padding:0;
+}
+
+/* NAVBAR */
+
+.navbar{
+background:#800020;
+}
+
+.navbar-brand{
+font-weight:bold;
+color:white;
+}
+
+.navbar-brand:hover {
+    color:white;
+}
+
+/* HERO SECTION (HOME PAGE) */
+
+.hero{
+padding:120px;
+text-align:center;
+background:white;
+}
+
+.hero h1{
+color:#800020;
+font-size:48px;
+font-weight:bold;
+}
+
+/* DASHBOARD TITLE */
+
+h2{
+color:#800020;
+font-weight:bold;
+}
+
+/* BOOK CARDS */
+
+.card{
+border:none;
+border-radius:8px;
+box-shadow:0 4px 10px rgba(0,0,0,0.1);
+background:white;
+transition:transform 0.2s;
+}
+
+.card:hover{
+transform:translateY(-4px);
+}
+
+.card img{
+height:250px;
+object-fit:cover;
+border-top-left-radius:8px;
+border-top-right-radius:8px;
+}
+
+.card-body h5{
+color:#800020;
+font-weight:600;
+}
+
+/* BUTTONS */
+
+.btn-primary{
+background:#800020;
+border:none;
+}
+
+.btn-primary{
+background:#800020 !important;
+border:none !important;
+color:white !important;
+}
+
+.btn-primary:hover{
+background:#5e0018 !important;
+}
+
+/* FOOTER */
+
+footer{
+background:#800020;
+color:white;
+text-align:center;
+padding:12px;
+margin-top:60px;
+}
+
+/* PAYMENT PAGE CENTER */
+
+.payment-page{
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+height:100vh;
+text-align:center;
+}

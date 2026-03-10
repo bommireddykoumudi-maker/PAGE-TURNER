@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="../css/style.css">
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<script src="../js/script.js"></script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2 class="mt-4">Top Books</h2>
+
+<div class="row">
+
+<div class="col-md-3">
+
+<div class="card">
+
+<img src="../images/pride.jpg">
+
+<div class="card-body">
+
+<h5>Pride and Prejudice</h5>
+
+<p>Jane Austen</p>
+
+<p>Genre: Romance</p>
+
+<p>1813 | 432 pages</p>
+
+<p>⭐4.8</p>
+
+<a href="payment.html" onclick="openBook('pride.pdf')" class="btn btn-primary">Read</a>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="col-md-3">
+
+<div class="card">
+
+<img src="../images/sherlock.jpg">
+
+<div class="card-body">
+
+<h5>Sherlock Holmes</h5>
+
+<p>Arthur Conan Doyle</p>
+
+<p>Genre: Mystery</p>
+
+<p>1892 | 307 pages</p>
+
+<p>⭐4.7</p>
+
+<a href="payment.html" onclick="openBook('sherlock.pdf')" class="btn btn-primary">Read</a>
+
+</div>
+
+</div>
+
+</div>
+<div class="col-md-3">
+<div class="card">
+<img src="../images/dracula.jpg">
+<div class="card-body">
+<h5>Dracula</h5>
+<p>Bram Stoker</p>
+<p>Genre: Horror</p>
+<p>1897 | 418 pages</p>
+<p>⭐4.6</p>
+<a href="payment.html" onclick="openBook('dracula.pdf')" class="btn btn-primary">Read</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<img src="../images/alice.jpg">
+<div class="card-body">
+<h5>Alice in Wonderland</h5>
+<p>Lewis Carroll</p>
+<p>Genre: Fantasy</p>
+<p>1865 | 200 pages</p>
+<p>⭐4.5</p>
+<a href="payment.html" onclick="openBook('alice.pdf')" class="btn btn-primary">Read</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<img src="../images/frankenstein.jpg">
+<div class="card-body">
+<h5>Frankenstein</h5>
+<p>Mary Shelley</p>
+<p>Genre: Science Fiction</p>
+<p>1818 | 280 pages</p>
+<p>⭐4.5</p>
+<a href="payment.html" onclick="openBook('frankenstein.pdf')" class="btn btn-primary">Read</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<img src="../images/treasure.jpg">
+<div class="card-body">
+<h5>Treasure Island</h5>
+<p>Robert Louis Stevenson</p>
+<p>Genre: Adventure</p>
+<p>1883 | 292 pages</p>
+<p>⭐4.4</p>
+<a href="payment.html" onclick="openBook('treasure.pdf')" class="btn btn-primary">Read</a>
+</div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="card">
+<img src="../images/mobydick.jpg">
+<div class="card-body">
+<h5>Moby Dick</h5>
+<p>Herman Melville</p>
+<p>Genre: Adventure</p>
+<p>1851 | 635 pages</p>
+<p>⭐4.2</p>
+<a href="payment.html" onclick="openBook('mobydick.pdf')" class="btn btn-primary">Read</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<img src="../images/warpeace.jpg">
+<div class="card-body">
+<h5>War and Peace</h5>
+<p>Leo Tolstoy</p>
+<p>Genre: Historical</p>
+<p>1869 | 1225 pages</p>
+<p>⭐4.6</p>
+<a href="payment.html" onclick="openBook('warpeace.pdf')" class="btn btn-primary">Read</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<img src="../images/hamlet.jpg">
+<div class="card-body">
+<h5>Hamlet</h5>
+<p>William Shakespeare</p>
+<p>Genre: Drama</p>
+<p>1603 | 160 pages</p>
+<p>⭐4.6</p>
+<a href="payment.html" onclick="openBook('hamlet.pdf')" class="btn btn-primary">Read</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<img src="../images/macbeth.jpg">
+<div class="card-body">
+<h5>Macbeth</h5>
+<p>William Shakespeare</p>
+<p>Genre: Tragedy</p>
+<p>1606 | 140 pages</p>
+<p>⭐4.5</p>
+<a href="payment.html" onclick="openBook('macbeth.pdf')" class="btn btn-primary">Read</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<img src="../images/dorian.jpg">
+<div class="card-body">
+<h5>The Picture of Dorian Gray</h5>
+<p>Oscar Wilde</p>
+<p>Genre: Gothic</p>
+<p>1890 | 254 pages</p>
+<p>⭐4.4</p>
+<a href="payment.html" onclick="openBook('dorian.pdf')" class="btn btn-primary">Read</a>
+</div>
+</div>
+</div>
+<div class="col-md-3">
+<div class="card">
+<img src="../images/millionkisses.jpg">
+<div class="card-body">
+<h5>A Million Kisses in Your Lifetime</h5>
+<p>Monica Murphy</p>
+<p>Genre: Romance</p>
+<p>2022 | 400 pages</p>
+<p>⭐4.7</p>
+<a href="payment.html" onclick="openBook('millionkisses.pdf')" class="btn btn-primary">Read</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<img src="../images/littlewomen.jpg">
+<div class="card-body">
+<h5>Little Women</h5>
+<p>Louisa May Alcott</p>
+<p>Genre: Family</p>
+<p>1868 | 759 pages</p>
+<p>⭐4.7</p>
+<a href="payment.html" onclick="openBook('littlewomen.pdf')" class="btn btn-primary">Read</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<img src="../images/gatsby.jpg">
+<div class="card-body">
+<h5>The Great Gatsby</h5>
+<p>F. Scott Fitzgerald</p>
+<p>Genre: Classic</p>
+<p>1925 | 218 pages</p>
+<p>⭐4.4</p>
+<a href="payment.html" onclick="openBook('gatsby.pdf')" class="btn btn-primary">Read</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<img src="../images/timemachine.jpg">
+<div class="card-body">
+<h5>The Time Machine</h5>
+<p>H. G. Wells</p>
+<p>Genre: Science Fiction</p>
+<p>1895 | 118 pages</p>
+<p>⭐4.4</p>
+<a href="payment.html" onclick="openBook('timemachine.pdf')" class="btn btn-primary">Read</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<img src="../images/junglebook.jpg">
+<div class="card-body">
+<h5>The Jungle Book</h5>
+<p>Rudyard Kipling</p>
+<p>Genre: Adventure</p>
+<p>1894 | 277 pages</p>
+<p>⭐4.5</p>
+<a href="payment.html" onclick="openBook('junglebook.pdf')" class="btn btn-primary">Read</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<img src="../images/anne.jpg">
+<div class="card-body">
+<h5>Anne of Green Gables</h5>
+<p>L. M. Montgomery</p>
+<p>Genre: Children's</p>
+<p>1908 | 320 pages</p>
+<p>⭐4.6</p>
+<a href="payment.html" onclick="openBook('anne.pdf')" class="btn btn-primary">Read</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<img src="../images/callwild.jpg">
+<div class="card-body">
+<h5>The Call of the Wild</h5>
+<p>Jack London</p>
+<p>Genre: Adventure</p>
+<p>1903 | 232 pages</p>
+<p>⭐4.5</p>
+<a href="payment.html" onclick="openBook('callwild.pdf')" class="btn btn-primary">Read</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<img src="../images/peterpan.jpg">
+<div class="card-body">
+<h5>Peter Pan</h5>
+<p>J. M. Barrie</p>
+<p>Genre: Fantasy</p>
+<p>1911 | 240 pages</p>
+<p>⭐4.4</p>
+<a href="payment.html" onclick="openBook('peterpan.pdf')" class="btn btn-primary">Read</a>
+</div>
+</div>
+</div>
+
+<div class="col-md-3">
+<div class="card">
+<img src="../images/secretgarden.jpg">
+<div class="card-body">
+<h5>The Secret Garden</h5>
+<p>Frances Hodgson Burnett</p>
+<p>Genre: Children's</p>
+<p>1911 | 331 pages</p>
+<p>⭐4.6</p>
+<a href="payment.html" onclick="openBook('secretgarden.pdf')" class="btn btn-primary">Read</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</body>
+</html>
