@@ -1,0 +1,92 @@
+import java.util.*;
+
+class Book {
+    int id;
+    String title;
+
+    Book(int id, String title) {
+        this.id = id;
+        this.title = title;
+    }
+
+    public String toString() {
+        return id + " - " + title;
+    }
+}
+
+public class PageTurnerDSA {
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        // LIST (ArrayList) storing books
+        ArrayList<Book> library = new ArrayList<>();
+
+        library.add(new Book(1,"Pride and Prejudice"));
+        library.add(new Book(2,"Sherlock Holmes"));
+        library.add(new Book(3,"Dracula"));
+        library.add(new Book(4,"Little Women"));
+        library.add(new Book(5,"The Great Gatsby"));
+
+        System.out.println("Books in PageTurner Library:");
+        for(Book b : library)
+            System.out.println(b);
+
+        // SEARCH (Linear Search)
+        System.out.print("\nEnter book ID to search: ");
+        int searchId = sc.nextInt();
+
+        boolean found = false;
+
+        for(Book b : library){
+            if(b.id == searchId){
+                System.out.println("Book Found: " + b.title);
+                found = true;
+            }
+        }
+
+        if(!found)
+            System.out.println("Book not found.");
+
+        // SORT (by title)
+        library.sort(Comparator.comparing(b -> b.title));
+
+        System.out.println("\nBooks sorted by title:");
+        for(Book b : library)
+            System.out.println(b);
+
+        // STACK (Recently viewed books)
+        Stack<String> recent = new Stack<>();
+        recent.push("Dracula");
+        recent.push("The Great Gatsby");
+
+        System.out.println("\nRecently Viewed: " + recent);
+
+        recent.pop();
+
+        System.out.println("After removing last viewed: " + recent);
+
+        // QUEUE (Reading Queue)
+        Queue<String> readingQueue = new LinkedList<>();
+
+        readingQueue.add("Sherlock Holmes");
+        readingQueue.add("Little Women");
+
+        System.out.println("\nReading Queue: " + readingQueue);
+
+        readingQueue.remove();
+
+        System.out.println("Queue after reading first book: " + readingQueue);
+
+        // HASHMAP (Fast book lookup)
+        HashMap<Integer,String> bookMap = new HashMap<>();
+
+        for(Book b : library)
+            bookMap.put(b.id,b.title);
+
+        System.out.println("\nHashMap Lookup Example:");
+        System.out.println("Book with ID 3: " + bookMap.get(3));
+
+    }
+}
